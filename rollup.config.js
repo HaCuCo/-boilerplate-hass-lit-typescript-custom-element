@@ -7,9 +7,9 @@ import summary from 'rollup-plugin-summary';
 import { uglify } from 'rollup-plugin-uglify';
 
 export default {
-  input: ['src/RssFeedList.ts'],
+  input: ['src/BoilerPlateElement.ts'],
   output: {
-    file: 'dist/rss-feed-list.js',
+    file: 'dist/boilerplate-element.js',
     format: 'es'
   },
   plugins: [

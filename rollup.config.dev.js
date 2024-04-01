@@ -6,10 +6,10 @@ import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss';
 
 export default {
-  input: ['src/RssFeedList.ts'],
+  input: ['src/BoilerPlateElement.ts'],
   output: {
     format: 'es',
-    file: './dist/rss-feed-list-dev.js',
+    file: './dist/boilerplate-element.js'
   },
   plugins: [
     commonjs(),
@@ -23,11 +23,11 @@ export default {
       allowCrossOrigin: true,
       https: {
         key: fs.readFileSync('key.pem'),
-        cert: fs.readFileSync('cert.pem'),
+        cert: fs.readFileSync('cert.pem')
       },
       headers: {
-        'Access-Control-Allow-Origin': '*',
-      },
-    }),
-  ],
+        'Access-Control-Allow-Origin': '*'
+      }
+    })
+  ]
 };
